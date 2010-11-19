@@ -1,0 +1,13 @@
+require 'rubygems'
+require 'rake'
+require 'echoe'
+
+Echoe.new('helloworld', '0.0.1') do |p|
+  p.description       = "A gem that illustrates how to build a gem"
+  p.url               = "http://github.com/anymoto/hello_world"
+  p.author            = "Ana Castro"
+  p.email             = "anymoto @nospam@ gmail.com"
+  p.ignore_pattern    = ["tmp/*", "script/*"]
+  p.development_dependencies = []
+end
+
